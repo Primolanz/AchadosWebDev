@@ -1,25 +1,29 @@
 {
   "expo": {
     "name": "AchadosWebDev",
-    "slug": "AchadosWebDev",
+    "slug": "achados-webdev",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "ios": {
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      },
-      "predictiveBackGestureEnabled": false
+      "backgroundColor": "#0D0E12"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permita o acesso à câmera para registrar seus achados."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Permita a localização para capturar a posição do achado."
+        }
+      ]
+    ]
   }
 }
